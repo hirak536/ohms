@@ -1,0 +1,32 @@
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+  container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+  container.classList.remove("right-panel-active");
+});
+
+document.getElementById('next1').addEventListener('click', function () {
+  document.getElementById('section1').style.display = 'none';
+  document.getElementById('section2').style.display = 'block';
+});
+
+document.getElementById('next2').addEventListener('click', function () {
+  document.getElementById('section2').style.display = 'none';
+  document.getElementById('section3').style.display = 'block';
+});
+
+document.getElementById('previous2').addEventListener('click', function () {
+
+  document.getElementById('section2').style.display = 'none';
+  document.getElementById('section1').style.display = 'block';
+});
+
+document.getElementById('previous3').addEventListener('click', function () {
+  document.getElementById('section2').style.display = 'block';
+  document.getElementById('section3').style.display = 'none';
+});

@@ -1,0 +1,81 @@
+    .btc {
+        background-color: #001f41fc;
+        border: none;
+        color: white;
+        padding: 6px 3px;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .zoom:hover {
+        background-color: #fffffffc;
+        transition: 0.5s;
+        color: #001f41fc;
+        transform: scale(1.2);
+    }
+
+    .rad {
+        border-radius: 10px;
+    }
+
+    .shad {
+
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .click{
+        border-radius: 5px;
+        box-shadow: 0 5px #999;
+    }
+
+    .click:hover {
+        background-color: #001f41fc;
+    }
+
+    .click:active {
+        background-color: #001f41fc;
+        box-shadow: 0 1px #666;
+        transform: translateY(5px);
+    }
+    .lbttc {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      .lbtc span {
+        cursor: pointer !important;
+        display: inline-block !important;
+        position: relative !important;
+        transition: 0.5s !important;
+      }
+      
+      .lbtc span:after {
+        content: '\00bb'!important;
+        position: absolute !important;
+        opacity: 0 !important;
+        top: 0  !important;
+        right: -20px  !important;
+        transition: 0.5s !important;
+      }
+      
+      .lbtc:hover span {
+        padding-right: 25px !important;
+      }
+      
+      .lbtc:hover span:after {
+        opacity: 1 !important;
+        right: 0 !important;
+      }
